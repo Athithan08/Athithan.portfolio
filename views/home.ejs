@@ -1,0 +1,26 @@
+<!-- 
+    File Name: home.ejs
+    Student Name: Athithan Somascanthan
+    StudentID: 301379331
+    Date: 10.07.2023
+-->
+
+<%- include('partials/header') %>
+
+<!-- Hero Section -->
+<div id="home" class="bg-gradient-to-r from-blue-400 to-purple-500 h-screen flex items-center text-white">
+    <!--  Image -->
+    <div class="flex-1 flex justify-center items-center transform -rotate-3">
+        <img src="/images/MyImage.jpeg" alt="Vector Image" class="w-11/12 h-auto shadow-xl">
+    </div>
+    
+    <!-- Content -->
+    <div class="flex-1 text-center py-12 pr-24 flex flex-col items-center justify-center">
+        <h1 class="text-8xl mb-4 font-black tracking-wide text-shadow-md">Athithan</h1>
+        <p class="text-4xl mb-6 text-gray-200 font-semibold tracking-wide">Student </p>
+        <p class="text-lg mb-12 text-gray-300 max-w-md leading-relaxed">I am a student from Centennial college</p>
+        <a href="/about" class="bg-transparent border-2 border-white px-10 py-3 rounded-full shadow-md hover:bg-white  hover:text-purple-600 hover:border-2 hover:border-purple-500 transition-all">About Me</a>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

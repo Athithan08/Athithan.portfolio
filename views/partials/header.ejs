@@ -1,0 +1,58 @@
+<!-- HTML5 Doctype Declaration -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Home - Portfolio</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="/output.css"> 
+
+    <!-- Inline custom styles for underline animation in navigation -->
+    <style>
+        /* Custom styles for navigation link hover underline animation */
+        nav a {
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #FFF;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<!-- Navbar Section -->
+<header class="bg-gray-800 fixed top-0 w-full z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-white">AS</h1>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="text-white hover:text-gray-300">Home</a></li>
+                <li><a href="about" class="text-white hover:text-gray-300">About</a></li>
+                <li><a href="services" class="text-white hover:text-gray-300">Services</a></li>
+                <li><a href="projects" class="text-white hover:text-gray-300">Projects</a></li>
+                <li><a href="contact" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

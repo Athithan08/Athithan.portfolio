@@ -1,0 +1,10 @@
+/* 
+    File Name: styles.css
+    Student Name: Athithan Somascanthan
+    StudentID: 301379331
+    Date: 10.07.2023
+*/
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

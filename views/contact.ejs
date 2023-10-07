@@ -1,0 +1,104 @@
+<!-- 
+    File Name: contact.ejs
+    Student Name: Athithan Somascanthan
+    StudentID: 301379331
+    Date: 10.07.2023
+-->
+
+
+<!-- Include the header partial -->
+<%- include('partials/header') %>
+
+<!-- Main Section: Gradient Background, Flexbox for Centering -->
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-200 to-purple-300">
+    
+    <!-- Main Content Container: Shadowed, Rounded, and Padded -->
+    <div class="max-w-4xl w-full space-y-8 flex justify-between bg-white p-10 rounded-lg shadow-xl">
+        
+        <!-- Left Side: Contact Information Panel -->
+        <div class="w-1/2 space-y-6 pr-6 border-r border-gray-200">
+            
+            <!-- Title for the Contact Information -->
+            <h4 class="text-3xl font-bold text-gray-800 tracking-wide mt-8">Connect With Me!</h4>
+            
+            <!-- Address Information -->
+            <div>
+                <h4 class="text-lg text-gray-700 font-semibold">Address:</h4>
+                <p class="text-gray-600">
+                    941 Progress Avenue<br>
+                    Scarborough ON M1G 3T8
+                </p>
+            </div>
+            
+            <!-- Phone Information -->
+            <div>
+                <h4 class="text-lg text-gray-700 font-semibold">Phone:</h4>
+                <p class="text-gray-600">(416) 289-5000</p>
+            </div>
+            
+            <!-- Email Information -->
+            <div>
+                <h4 class="text-lg text-gray-700 font-semibold">Email:</h4>
+                <p class="text-gray-600">asomasca@mycentennial.com</p>
+            </div>
+            
+            <!-- You can add more contact details here -->
+        </div>
+        
+        <!-- Right Side: Contact Form -->
+        <div class="w-1/2 space-y-6 pl-6">
+            
+            <!-- Form Title -->
+            <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Send a Message</h2>
+            
+            <!-- Actual Form Starts Here -->
+            <form action="/home" method="POST" class="mt-8 space-y-6">
+                
+                <!-- Input Fields Container -->
+                <div class="space-y-6">
+                    
+                    <!-- First Name Input Field -->
+                    <div>
+                        <label for="first-name" class="block text-gray-700">First Name</label>
+                        <input id="first-name" name="first-name" type="text" required class="mt-1 w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="First Name">
+                    </div>
+                    
+                    <!-- Last Name Input Field -->
+                    <div>
+                        <label for="last-name" class="block text-gray-700">Last Name</label>
+                        <input id="last-name" name="last-name" type="text" required class="mt-1 w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="Last Name">
+                    </div>
+                    
+                    <!-- Contact Number Input Field -->
+                    <div>
+                        <label for="contact-number" class="block text-gray-700">Contact Number</label>
+                        <input id="contact-number" name="contact-number" type="text" required class="mt-1 w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="Contact Number">
+                    </div>
+                    
+                    <!-- Email Address Input Field -->
+                    <div>
+                        <label for="email-address" class="block text-gray-700">Email Address</label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="mt-1 w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="Email Address">
+                    </div>
+                    
+                    <!-- Message Textarea Field -->
+                    <div class="mt-4">
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 w-full px-4 py-2 rounded-md border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition" placeholder="Type your message..."></textarea>
+                    </div>
+                </div>
+    
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" href="/home" class="w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Include the footer partial -->
+<%- include('partials/footer') %>
